@@ -1,0 +1,11 @@
+[
+{"tag":"char","bitSize":8,"bitAlignment":8},
+{"tag":"void","bitSize":null,"bitAlignment":null},
+{"tag":"int","bitSize":32,"bitAlignment":32},
+{"tag":"unsigned-long-long","bitSize":64,"bitAlignment":64},
+{"tag":"typedef","name":"size_t","location":"/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include/stddef.h:209:23","type":{"tag":":unsigned-long-long"}},
+{"tag":"function","name":"memcpy","location":"/usr/include/string.h:42:14","inline":false,"variadic":false,"returnType":{"tag":":pointer","type":{"tag":":void"}},"storageClass":"extern","parameters":[{"tag":"parameter","name":"__dest","type":{"tag":":pointer","type":{"tag":":void"}}},{"tag":"parameter","name":"__src","type":{"tag":":pointer","type":{"tag":":void"}}},{"tag":"parameter","name":"__n","type":{"tag":"size_t"}}]},
+{"tag":"function","name":"memcmp","location":"/usr/include/string.h:63:12","inline":false,"variadic":false,"returnType":{"tag":":int"},"storageClass":"extern","parameters":[{"tag":"parameter","name":"__s1","type":{"tag":":pointer","type":{"tag":":void"}}},{"tag":"parameter","name":"__s2","type":{"tag":":pointer","type":{"tag":":void"}}},{"tag":"parameter","name":"__n","type":{"tag":"size_t"}}]},
+{"tag":"function","name":"strcpy","location":"/usr/include/string.h:121:14","inline":false,"variadic":false,"returnType":{"tag":":pointer","type":{"tag":":char"}},"storageClass":"extern","parameters":[{"tag":"parameter","name":"__dest","type":{"tag":":pointer","type":{"tag":":char"}}},{"tag":"parameter","name":"__src","type":{"tag":":pointer","type":{"tag":":char"}}}]},
+{"tag":"function","name":"strcmp","location":"/usr/include/string.h:136:12","inline":false,"variadic":false,"returnType":{"tag":":int"},"storageClass":"extern","parameters":[{"tag":"parameter","name":"__s1","type":{"tag":":pointer","type":{"tag":":char"}}},{"tag":"parameter","name":"__s2","type":{"tag":":pointer","type":{"tag":":char"}}}]}
+]
