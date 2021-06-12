@@ -1,11 +1,4 @@
-(uiop:define-package :bodge-libc-essentials
-  (:use))
-
-(uiop:define-package :%libc.es
-  (:use))
-
-
-(claw:defwrapper (bodge-libc-essentials::bodge-libc-essentials
+(claw:defwrapper (:bodge-libc-essentials/wrapper
                   (:headers "assert.h"
                             "ctype.h"
                             "errno.h"
@@ -24,5 +17,12 @@
                                         "memcmp"
                                         "strcmp"
                                         "strcpy")
-                  (:exclude-definitions "^_\\w*"))
+                  (:exclude-definitions "^_\\w*")
+                  (:targets ((:and :x86-64 :linux) "x86_64-pc-linux-gnu")
+                            ((:and :x86 :linux) "i686-pc-linux-gnu")
+                            ((:and :x86-64 :windows) "x86_64-pc-windows-gnu")
+                            ((:and :x86 :windows) "i686-pc-windows-gnu")
+                            ((:and :x86-64 :drawin) "x86_64-apple-darwin-gnu")
+                            ((:and :x86 :drawin) "i686-apple-darwin-gnu"))
+                  (:persistent :bodge-libc-essentials-bindings))
   :in-package :%libc.es)
